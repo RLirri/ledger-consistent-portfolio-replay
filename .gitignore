@@ -1,0 +1,32 @@
+# macOS
+
+.DS_Store
+
+# IDE
+
+.idea/
+.vscode/
+
+# Python
+
+**pycache**/
+*.py[cod]
+*.egg-info/
+
+# Data and generated outputs
+
+data/
+artifacts/
+
+# Jupyter
+
+.ipynb_checkpoints/
+
+# Build
+
+build/
+dist/
+
+# Logs
+
+*.log
