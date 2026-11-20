@@ -19,3 +19,5 @@ Paired stationary resampling uses common indices, 2,000 replicates, geometric me
 Lifecycle implementation shortfall uses policy-specific endpoints and cannot rank common-horizon savings. The E2b factorial investigates accounting assumptions; it does not exactly attribute a historical legacy gap. Three capital levels are not a calibrated continuous capacity frontier. Two strategies and one historical path do not establish universal execution superiority.
 
 Technical specification and scenario values are governed by the exact source and configs/v2 registry; this explanatory document does not change scientific logic.
+
+The preserved registry annotation “quantities fixed pre-open” refers to desired gaps only. Final units depend on opening-price liquidity clipping and cost-inclusive cash allocation, as described above; the frozen record is not silently rewritten.
