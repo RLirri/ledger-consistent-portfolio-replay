@@ -43,7 +43,7 @@
     "scripts/18_make_capacity_frontier_figure.py": "d8ded652668bff34976ab1e04eb4bbed2879d04d991ec7a0f851c10ab66b7cad",
     "scripts/analyze_saved_runs.py": "27ab64485426a028a61c7dfc698179a09756c81859a21ffcbd486e36b2d44dd6",
     "scripts/publication_figures.py": "56b89dfebb9de19f4b208b8fcbc9d5317ce120fbed5603c41614618faec07633",
-    "scripts/publication_tables.py": "b774444c981a45a5002a59485f2cd33a457f6ade71aef65629acb2ced392d4cc",
+    "scripts/publication_tables.py": "ed39138c139f313a9c0d39dae43e7346256ed19c3aae7e6a4c049beefde99100",
     "scripts/render_publication.py": "ab02cb189b8e0f5c3d0928d2f9b4c8bc71a06c971e06cf0c04ddc9ace2911df9",
     "scripts/reproduction.py": "ca5e80ca2101fada1670e4bfeeb2295778e744fc5d898214a18dca7e6eba15f8",
     "scripts/statistical_recipes.py": "e0fb4144629b6ec2def19a934c291089e595b25d1102af42afbfedffb7a44794",

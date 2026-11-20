@@ -185,3 +185,24 @@ table(
         indent=2,
     )
 )
+
+
+# Display-only capital labels, matching the separately verified publication tables.
+for key in ["T3", "T4", "T5"]:
+    path = P / "tables" / (key + ".tex")
+    text = path.read_text()
+    for row in records[key]["formatted_rows"]:
+        for i, value in enumerate(row):
+            if isinstance(value, str) and value.startswith(("EW ", "MOM ")):
+                label = (value.replace(" 10m", r" \$10M")
+                         .replace(" 100m", r" \$100M")
+                         .replace(" 1b", r" \$1B"))
+                text = text.replace(value + " &", label + " &")
+                row[i] = label
+    path.write_text(text)
+    records[key]["sha256"] = hashlib.sha256(text.encode()).hexdigest()
+(P / "tables/table_source_values.json").write_text(json.dumps(records, indent=2))
+receipt = json.loads((P / "manifests/table_generation.json").read_text())
+receipt["tables"] = records
+receipt["display_only_refinement"] = "Capital labels; numerical cells unchanged"
+(P / "manifests/table_generation.json").write_text(json.dumps(receipt, indent=2))
