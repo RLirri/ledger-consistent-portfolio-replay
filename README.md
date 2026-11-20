@@ -1,75 +1,58 @@
-# Ledger-Consistent Portfolio Replay Framework
+# Ledger-consistent portfolio replay
 
+Research software for **Counterfactual Evaluation of Execution Costs and Liquidity Constraints in Systematic Portfolio Rebalancing**.
 
-### Overview
+The study asks when incorporating execution costs into portfolio-state evolution changes measured outcomes relative to a matched post-hoc cost adjustment. It compares weekly equal weight and daily momentum across initial capital levels, with controlled cost/liquidity, timing and execution-policy comparisons. Individual execution mechanisms are established methods; the contribution is matched computational evaluation and conditional empirical interpretation.
 
-This project provides a reproducible research framework for evaluating execution costs, implementation shortfall, tracking error, and capacity constraints in systematic portfolio rebalancing. The framework employs a ledger-consistent replay engine that explicitly models integer-share accounting, cash feasibility, transaction costs, participation-based trading limits, and carry-forward of unfilled orders.
+## Version and scope
 
-The empirical study uses a diversified universe of U.S. exchange-traded funds (ETFs) and evaluates portfolio implementation under realistic execution assumptions across a long historical sample.
+Version 2.0.0 packages the scientific source used for the manuscript. The private experimental commit is 8e8096fcac68adc7b2f3f7784035369c5895c4f3. File-level hashes in [experimental_identity.json](docs/experimental_identity.json) establish correspondence despite different public release commit history. V1 remains at tag v1.0.0 and is not the implementation of the current study.
 
-### Reproducibility
+The design has 62 economic scenarios, 66 predefined contrasts and 12 primary comparisons. Historical prices, trade tapes, aggregate results and rendered empirical figures are excluded because redistribution rights have not been established. No manuscript acceptance, publication or indexing is claimed.
 
-All figures, tables, and results reported in the paper are generated from a fixed configuration and automated experiment pipeline.
+## Organization
 
-Key experiment settings are defined in:
+- src/ledger_consistent_etf_trading/v2/: replay, validation, cohorts, costs, metrics, resampling, registry and budgeted execution.
+- configs/v2/: scenario records and contrast specification.
+- tests/: synthetic accounting, temporal, numerical and batch contracts, plus explicit snapshot-dependent checks.
+- scripts/reproduction.py: operator-owned plans and the unchanged validated runner.
+- scripts/analyze_saved_runs.py and statistical_recipes.py: saved-path analysis and fixed estimators.
+- scripts/render_publication.py: saved-evidence figure/table rendering.
+- docs/: model, inputs, provenance and limitations.
 
-```text
-src/ledger_consistent_etf_trading/config.py
-```
+Non-V2 modules and numbered scripts are retained V1 reference code. They are not the V2 workflow. Older acquisition scripts require legacy helper/provider modules absent from the original public snapshot; use the documented compatible-input interface instead.
 
-After configuring the experiment parameters, the complete workflow can be executed through:
+## Installation
 
-```bash
-python scripts/00_run_full_pipeline.py
-```
+Use Python 3.11, Git and a POSIX system. The batch runner uses Unix resource controls.
 
-The pipeline performs:
+    python -m venv .venv
+    . .venv/bin/activate
+    python -m pip install -r requirements.txt
+    python -m pip install --no-build-isolation -e .
 
-* Data acquisition
-* Feature generation
-* Panel construction
-* Portfolio replay simulation
-* Execution diagnostics
-* Sensitivity analysis
-* Capacity-stress evaluation
-* Publication-figure generation
+Dependencies pin the tested direct scientific and figure packages, not a complete binary lock. Original experiments used Python 3.11.11 on macOS ARM64. Another platform or snapshot has a new identity.
 
-### Installation
+## Reproduction and tests
 
-Create the environment:
+[REPRODUCIBILITY.md](REPRODUCIBILITY.md) separates synthetic verification, rendering from lawfully held saved outputs and historical replay.
 
-```bash
-conda create -n etf-ledger python=3.12
-conda activate etf-ledger
-```
+    python -B -m unittest discover -s tests -t . -v
+    python -B scripts/reproduction.py registry
+    python -B scripts/verify_source.py
 
-Install dependencies:
+Tests use synthetic markets. Snapshot/private-record checks explicitly skip when inputs are absent. No command above downloads data or executes the historical grid.
 
-```bash
-pip install -r requirements.txt
-pip install -e .
-```
+Inputs must be lawfully obtained. See [data schema](docs/DATA.md). A fresh download cannot be claimed to reproduce the preserved snapshot exactly. Historical execution requires an explicit new operator plan, budget and data-rights acknowledgement, without inheriting the author's earlier permission.
 
-Alternatively:
+## Results and figures
 
-```bash
-conda env create -f environment.yml
-conda activate etf-ledger
-```
+Plotting code and shared style are included, without an empirical result bundle. Regeneration requires locally held canonical analysis and prepared saved diagnostics. The wrapper writes to a new directory without replay. Plot values are exported for verification; fonts are not distributed.
 
-### Repository Structure
+## Interpretation limits
 
+Costs and ADV budgets are scenario assumptions, not calibrated institutional capacity. Price returns omit ordinary distributions; fractional adjusted units are not historical shares. Daily-bar batch execution, a retrospective universe, two strategies and one market path limit generalization. Uncapped modeled notional can exceed lagged ADV and normalized impact saturates. Completion uses each replay's own demand. Nominal pointwise bootstrap intervals have unvalidated stationarity/coverage. Lifecycle shortfall endpoints differ across policies.
 
-```text
-scripts/       End-to-end experiment pipeline
-src/           Core framework implementation
-data/          Downloaded and processed datasets
-artifacts/     Generated outputs, diagnostics, scorecards, and figures
-reports/       Time series figures 
-```
+## Citation and license
 
-
-
-### License
-
-Released under the MIT License.
+Use [CITATION.cff](CITATION.cff) for software citation. The related manuscript is unpublished; no paper/software DOI is assigned here. The existing [MIT license](LICENSE) is preserved and grants no rights to third-party data, papers or fonts. See [provenance](docs/PROVENANCE.md).

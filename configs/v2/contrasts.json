@@ -1,0 +1,810 @@
+{
+ "count": 66,
+ "primary": 12,
+ "contrasts": [
+  {
+   "experiment": "E1",
+   "tier": "diagnostic",
+   "arm": "E1_prior_close_same_day",
+   "reference": "E1_prior_close_lagged",
+   "kind": "replay",
+   "allowed": [
+    "features",
+    "valuation"
+   ],
+   "note": "negative control; reported as a difference from the primary arm only"
+  },
+  {
+   "experiment": "E1",
+   "tier": "secondary",
+   "arm": "E1_open_lagged",
+   "reference": "E1_prior_close_lagged",
+   "kind": "replay",
+   "allowed": [
+    "features",
+    "valuation"
+   ],
+   "note": "observed-open sensitivity"
+  },
+  {
+   "experiment": "E1",
+   "tier": "diagnostic",
+   "arm": "E1_open_same_day",
+   "reference": "E1_prior_close_lagged",
+   "kind": "replay",
+   "allowed": [
+    "features",
+    "valuation"
+   ],
+   "note": "negative control; reported as a difference from the primary arm only"
+  },
+  {
+   "experiment": "E1",
+   "tier": "diagnostic",
+   "arm": "E1_same_close_lagged",
+   "reference": "E1_prior_close_lagged",
+   "kind": "replay",
+   "allowed": [
+    "features",
+    "valuation"
+   ],
+   "note": "negative control; reported as a difference from the primary arm only"
+  },
+  {
+   "experiment": "E1",
+   "tier": "diagnostic",
+   "arm": "E1_same_close_same_day",
+   "reference": "E1_prior_close_lagged",
+   "kind": "replay",
+   "allowed": [
+    "features",
+    "valuation"
+   ],
+   "note": "negative control; reported as a difference from the primary arm only"
+  },
+  {
+   "experiment": "E2",
+   "tier": "primary",
+   "arm": "E2_A_10m_cost1_cap0",
+   "reference": "E2_A_10m_cost0_cap0",
+   "kind": "vs_posthoc",
+   "allowed": [
+    "cost.enabled"
+   ],
+   "note": "stateful cost against post-hoc cost adjustment of the reference"
+  },
+  {
+   "experiment": "E2",
+   "tier": "primary",
+   "arm": "E2_A_10m_cost1_cap1",
+   "reference": "E2_A_10m_cost0_cap0",
+   "kind": "vs_posthoc",
+   "allowed": [
+    "cap_enabled",
+    "cost.enabled"
+   ],
+   "note": "stateful cost and limit against post-hoc cost adjustment"
+  },
+  {
+   "experiment": "E2",
+   "tier": "secondary",
+   "arm": "E2_A_10m_cost1_cap0",
+   "reference": "E2_A_10m_cost0_cap0",
+   "kind": "replay",
+   "allowed": [
+    "cost.enabled"
+   ],
+   "note": ""
+  },
+  {
+   "experiment": "E2",
+   "tier": "secondary",
+   "arm": "E2_A_10m_cost0_cap1",
+   "reference": "E2_A_10m_cost0_cap0",
+   "kind": "replay",
+   "allowed": [
+    "cap_enabled"
+   ],
+   "note": ""
+  },
+  {
+   "experiment": "E2",
+   "tier": "secondary",
+   "arm": "E2_A_10m_cost1_cap1",
+   "reference": "E2_A_10m_cost0_cap0",
+   "kind": "replay",
+   "allowed": [
+    "cap_enabled",
+    "cost.enabled"
+   ],
+   "note": ""
+  },
+  {
+   "experiment": "E2",
+   "tier": "primary",
+   "arm": "E2_A_100m_cost1_cap0",
+   "reference": "E2_A_100m_cost0_cap0",
+   "kind": "vs_posthoc",
+   "allowed": [
+    "cost.enabled"
+   ],
+   "note": "stateful cost against post-hoc cost adjustment of the reference"
+  },
+  {
+   "experiment": "E2",
+   "tier": "primary",
+   "arm": "E2_A_100m_cost1_cap1",
+   "reference": "E2_A_100m_cost0_cap0",
+   "kind": "vs_posthoc",
+   "allowed": [
+    "cap_enabled",
+    "cost.enabled"
+   ],
+   "note": "stateful cost and limit against post-hoc cost adjustment"
+  },
+  {
+   "experiment": "E2",
+   "tier": "secondary",
+   "arm": "E2_A_100m_cost1_cap0",
+   "reference": "E2_A_100m_cost0_cap0",
+   "kind": "replay",
+   "allowed": [
+    "cost.enabled"
+   ],
+   "note": ""
+  },
+  {
+   "experiment": "E2",
+   "tier": "secondary",
+   "arm": "E2_A_100m_cost0_cap1",
+   "reference": "E2_A_100m_cost0_cap0",
+   "kind": "replay",
+   "allowed": [
+    "cap_enabled"
+   ],
+   "note": ""
+  },
+  {
+   "experiment": "E2",
+   "tier": "secondary",
+   "arm": "E2_A_100m_cost1_cap1",
+   "reference": "E2_A_100m_cost0_cap0",
+   "kind": "replay",
+   "allowed": [
+    "cap_enabled",
+    "cost.enabled"
+   ],
+   "note": ""
+  },
+  {
+   "experiment": "E2",
+   "tier": "primary",
+   "arm": "E2_A_1b_cost1_cap0",
+   "reference": "E2_A_1b_cost0_cap0",
+   "kind": "vs_posthoc",
+   "allowed": [
+    "cost.enabled"
+   ],
+   "note": "stateful cost against post-hoc cost adjustment of the reference"
+  },
+  {
+   "experiment": "E2",
+   "tier": "primary",
+   "arm": "E2_A_1b_cost1_cap1",
+   "reference": "E2_A_1b_cost0_cap0",
+   "kind": "vs_posthoc",
+   "allowed": [
+    "cap_enabled",
+    "cost.enabled"
+   ],
+   "note": "stateful cost and limit against post-hoc cost adjustment"
+  },
+  {
+   "experiment": "E2",
+   "tier": "secondary",
+   "arm": "E2_A_1b_cost1_cap0",
+   "reference": "E2_A_1b_cost0_cap0",
+   "kind": "replay",
+   "allowed": [
+    "cost.enabled"
+   ],
+   "note": ""
+  },
+  {
+   "experiment": "E2",
+   "tier": "secondary",
+   "arm": "E2_A_1b_cost0_cap1",
+   "reference": "E2_A_1b_cost0_cap0",
+   "kind": "replay",
+   "allowed": [
+    "cap_enabled"
+   ],
+   "note": ""
+  },
+  {
+   "experiment": "E2",
+   "tier": "secondary",
+   "arm": "E2_A_1b_cost1_cap1",
+   "reference": "E2_A_1b_cost0_cap0",
+   "kind": "replay",
+   "allowed": [
+    "cap_enabled",
+    "cost.enabled"
+   ],
+   "note": ""
+  },
+  {
+   "experiment": "E2",
+   "tier": "primary",
+   "arm": "E2_C_10m_cost1_cap0",
+   "reference": "E2_C_10m_cost0_cap0",
+   "kind": "vs_posthoc",
+   "allowed": [
+    "cost.enabled"
+   ],
+   "note": "stateful cost against post-hoc cost adjustment of the reference"
+  },
+  {
+   "experiment": "E2",
+   "tier": "primary",
+   "arm": "E2_C_10m_cost1_cap1",
+   "reference": "E2_C_10m_cost0_cap0",
+   "kind": "vs_posthoc",
+   "allowed": [
+    "cap_enabled",
+    "cost.enabled"
+   ],
+   "note": "stateful cost and limit against post-hoc cost adjustment"
+  },
+  {
+   "experiment": "E2",
+   "tier": "secondary",
+   "arm": "E2_C_10m_cost1_cap0",
+   "reference": "E2_C_10m_cost0_cap0",
+   "kind": "replay",
+   "allowed": [
+    "cost.enabled"
+   ],
+   "note": ""
+  },
+  {
+   "experiment": "E2",
+   "tier": "secondary",
+   "arm": "E2_C_10m_cost0_cap1",
+   "reference": "E2_C_10m_cost0_cap0",
+   "kind": "replay",
+   "allowed": [
+    "cap_enabled"
+   ],
+   "note": ""
+  },
+  {
+   "experiment": "E2",
+   "tier": "secondary",
+   "arm": "E2_C_10m_cost1_cap1",
+   "reference": "E2_C_10m_cost0_cap0",
+   "kind": "replay",
+   "allowed": [
+    "cap_enabled",
+    "cost.enabled"
+   ],
+   "note": ""
+  },
+  {
+   "experiment": "E2",
+   "tier": "primary",
+   "arm": "E2_C_100m_cost1_cap0",
+   "reference": "E2_C_100m_cost0_cap0",
+   "kind": "vs_posthoc",
+   "allowed": [
+    "cost.enabled"
+   ],
+   "note": "stateful cost against post-hoc cost adjustment of the reference"
+  },
+  {
+   "experiment": "E2",
+   "tier": "primary",
+   "arm": "E2_C_100m_cost1_cap1",
+   "reference": "E2_C_100m_cost0_cap0",
+   "kind": "vs_posthoc",
+   "allowed": [
+    "cap_enabled",
+    "cost.enabled"
+   ],
+   "note": "stateful cost and limit against post-hoc cost adjustment"
+  },
+  {
+   "experiment": "E2",
+   "tier": "secondary",
+   "arm": "E2_C_100m_cost1_cap0",
+   "reference": "E2_C_100m_cost0_cap0",
+   "kind": "replay",
+   "allowed": [
+    "cost.enabled"
+   ],
+   "note": ""
+  },
+  {
+   "experiment": "E2",
+   "tier": "secondary",
+   "arm": "E2_C_100m_cost0_cap1",
+   "reference": "E2_C_100m_cost0_cap0",
+   "kind": "replay",
+   "allowed": [
+    "cap_enabled"
+   ],
+   "note": ""
+  },
+  {
+   "experiment": "E2",
+   "tier": "secondary",
+   "arm": "E2_C_100m_cost1_cap1",
+   "reference": "E2_C_100m_cost0_cap0",
+   "kind": "replay",
+   "allowed": [
+    "cap_enabled",
+    "cost.enabled"
+   ],
+   "note": ""
+  },
+  {
+   "experiment": "E2",
+   "tier": "primary",
+   "arm": "E2_C_1b_cost1_cap0",
+   "reference": "E2_C_1b_cost0_cap0",
+   "kind": "vs_posthoc",
+   "allowed": [
+    "cost.enabled"
+   ],
+   "note": "stateful cost against post-hoc cost adjustment of the reference"
+  },
+  {
+   "experiment": "E2",
+   "tier": "primary",
+   "arm": "E2_C_1b_cost1_cap1",
+   "reference": "E2_C_1b_cost0_cap0",
+   "kind": "vs_posthoc",
+   "allowed": [
+    "cap_enabled",
+    "cost.enabled"
+   ],
+   "note": "stateful cost and limit against post-hoc cost adjustment"
+  },
+  {
+   "experiment": "E2",
+   "tier": "secondary",
+   "arm": "E2_C_1b_cost1_cap0",
+   "reference": "E2_C_1b_cost0_cap0",
+   "kind": "replay",
+   "allowed": [
+    "cost.enabled"
+   ],
+   "note": ""
+  },
+  {
+   "experiment": "E2",
+   "tier": "secondary",
+   "arm": "E2_C_1b_cost0_cap1",
+   "reference": "E2_C_1b_cost0_cap0",
+   "kind": "replay",
+   "allowed": [
+    "cap_enabled"
+   ],
+   "note": ""
+  },
+  {
+   "experiment": "E2",
+   "tier": "secondary",
+   "arm": "E2_C_1b_cost1_cap1",
+   "reference": "E2_C_1b_cost0_cap0",
+   "kind": "replay",
+   "allowed": [
+    "cap_enabled",
+    "cost.enabled"
+   ],
+   "note": ""
+  },
+  {
+   "experiment": "E2b",
+   "tier": "diagnostic",
+   "arm": "E2b_cost0_min0_borrow1_integer",
+   "reference": "E2b_cost0_min0_borrow1_fractional",
+   "kind": "replay",
+   "allowed": [
+    "allow_borrowing",
+    "cost.enabled",
+    "min_trade_notional",
+    "units"
+   ],
+   "note": ""
+  },
+  {
+   "experiment": "E2b",
+   "tier": "diagnostic",
+   "arm": "E2b_cost0_min0_borrow0_fractional",
+   "reference": "E2b_cost0_min0_borrow1_fractional",
+   "kind": "replay",
+   "allowed": [
+    "allow_borrowing",
+    "cost.enabled",
+    "min_trade_notional",
+    "units"
+   ],
+   "note": ""
+  },
+  {
+   "experiment": "E2b",
+   "tier": "diagnostic",
+   "arm": "E2b_cost0_min0_borrow0_integer",
+   "reference": "E2b_cost0_min0_borrow1_fractional",
+   "kind": "replay",
+   "allowed": [
+    "allow_borrowing",
+    "cost.enabled",
+    "min_trade_notional",
+    "units"
+   ],
+   "note": ""
+  },
+  {
+   "experiment": "E2b",
+   "tier": "diagnostic",
+   "arm": "E2b_cost0_min1000_borrow1_fractional",
+   "reference": "E2b_cost0_min0_borrow1_fractional",
+   "kind": "replay",
+   "allowed": [
+    "allow_borrowing",
+    "cost.enabled",
+    "min_trade_notional",
+    "units"
+   ],
+   "note": ""
+  },
+  {
+   "experiment": "E2b",
+   "tier": "diagnostic",
+   "arm": "E2b_cost0_min1000_borrow1_integer",
+   "reference": "E2b_cost0_min0_borrow1_fractional",
+   "kind": "replay",
+   "allowed": [
+    "allow_borrowing",
+    "cost.enabled",
+    "min_trade_notional",
+    "units"
+   ],
+   "note": ""
+  },
+  {
+   "experiment": "E2b",
+   "tier": "diagnostic",
+   "arm": "E2b_cost0_min1000_borrow0_fractional",
+   "reference": "E2b_cost0_min0_borrow1_fractional",
+   "kind": "replay",
+   "allowed": [
+    "allow_borrowing",
+    "cost.enabled",
+    "min_trade_notional",
+    "units"
+   ],
+   "note": ""
+  },
+  {
+   "experiment": "E2b",
+   "tier": "diagnostic",
+   "arm": "E2b_cost0_min1000_borrow0_integer",
+   "reference": "E2b_cost0_min0_borrow1_fractional",
+   "kind": "replay",
+   "allowed": [
+    "allow_borrowing",
+    "cost.enabled",
+    "min_trade_notional",
+    "units"
+   ],
+   "note": ""
+  },
+  {
+   "experiment": "E2b",
+   "tier": "diagnostic",
+   "arm": "E2b_cost1_min0_borrow1_fractional",
+   "reference": "E2b_cost0_min0_borrow1_fractional",
+   "kind": "replay",
+   "allowed": [
+    "allow_borrowing",
+    "cost.enabled",
+    "min_trade_notional",
+    "units"
+   ],
+   "note": ""
+  },
+  {
+   "experiment": "E2b",
+   "tier": "diagnostic",
+   "arm": "E2b_cost1_min0_borrow1_integer",
+   "reference": "E2b_cost0_min0_borrow1_fractional",
+   "kind": "replay",
+   "allowed": [
+    "allow_borrowing",
+    "cost.enabled",
+    "min_trade_notional",
+    "units"
+   ],
+   "note": ""
+  },
+  {
+   "experiment": "E2b",
+   "tier": "diagnostic",
+   "arm": "E2b_cost1_min0_borrow0_fractional",
+   "reference": "E2b_cost0_min0_borrow1_fractional",
+   "kind": "replay",
+   "allowed": [
+    "allow_borrowing",
+    "cost.enabled",
+    "min_trade_notional",
+    "units"
+   ],
+   "note": ""
+  },
+  {
+   "experiment": "E2b",
+   "tier": "diagnostic",
+   "arm": "E2b_cost1_min0_borrow0_integer",
+   "reference": "E2b_cost0_min0_borrow1_fractional",
+   "kind": "replay",
+   "allowed": [
+    "allow_borrowing",
+    "cost.enabled",
+    "min_trade_notional",
+    "units"
+   ],
+   "note": ""
+  },
+  {
+   "experiment": "E2b",
+   "tier": "diagnostic",
+   "arm": "E2b_cost1_min1000_borrow1_fractional",
+   "reference": "E2b_cost0_min0_borrow1_fractional",
+   "kind": "replay",
+   "allowed": [
+    "allow_borrowing",
+    "cost.enabled",
+    "min_trade_notional",
+    "units"
+   ],
+   "note": ""
+  },
+  {
+   "experiment": "E2b",
+   "tier": "diagnostic",
+   "arm": "E2b_cost1_min1000_borrow1_integer",
+   "reference": "E2b_cost0_min0_borrow1_fractional",
+   "kind": "replay",
+   "allowed": [
+    "allow_borrowing",
+    "cost.enabled",
+    "min_trade_notional",
+    "units"
+   ],
+   "note": ""
+  },
+  {
+   "experiment": "E2b",
+   "tier": "diagnostic",
+   "arm": "E2b_cost1_min1000_borrow0_fractional",
+   "reference": "E2b_cost0_min0_borrow1_fractional",
+   "kind": "replay",
+   "allowed": [
+    "allow_borrowing",
+    "cost.enabled",
+    "min_trade_notional",
+    "units"
+   ],
+   "note": ""
+  },
+  {
+   "experiment": "E2b",
+   "tier": "diagnostic",
+   "arm": "E2b_cost1_min1000_borrow0_integer",
+   "reference": "E2b_cost0_min0_borrow1_fractional",
+   "kind": "replay",
+   "allowed": [
+    "allow_borrowing",
+    "cost.enabled",
+    "min_trade_notional",
+    "units"
+   ],
+   "note": ""
+  },
+  {
+   "experiment": "E3",
+   "tier": "secondary",
+   "arm": "E3_A_1b_cancel",
+   "reference": "E2_A_1b_cost1_cap1",
+   "kind": "replay",
+   "allowed": [
+    "experiment",
+    "residual_policy"
+   ],
+   "note": ""
+  },
+  {
+   "experiment": "E3",
+   "tier": "diagnostic",
+   "arm": "E3_A_1b_legacy_additive",
+   "reference": "E2_A_1b_cost1_cap1",
+   "kind": "replay",
+   "allowed": [
+    "experiment",
+    "residual_policy"
+   ],
+   "note": ""
+  },
+  {
+   "experiment": "E3",
+   "tier": "diagnostic",
+   "arm": "E3_C_100m_legacy_additive",
+   "reference": "E2_C_100m_cost1_cap1",
+   "kind": "replay",
+   "allowed": [
+    "experiment",
+    "residual_policy"
+   ],
+   "note": ""
+  },
+  {
+   "experiment": "E3",
+   "tier": "diagnostic",
+   "arm": "E3_C_1b_legacy_additive",
+   "reference": "E2_C_1b_cost1_cap1",
+   "kind": "replay",
+   "allowed": [
+    "experiment",
+    "residual_policy"
+   ],
+   "note": ""
+  },
+  {
+   "experiment": "E4",
+   "tier": "diagnostic",
+   "arm": "E4_A_10m_legacy_sequential",
+   "reference": "E2_A_10m_cost1_cap1",
+   "kind": "replay",
+   "allowed": [
+    "cash_rule",
+    "experiment"
+   ],
+   "note": ""
+  },
+  {
+   "experiment": "E4",
+   "tier": "diagnostic",
+   "arm": "E4_C_100m_legacy_sequential",
+   "reference": "E2_C_100m_cost1_cap1",
+   "kind": "replay",
+   "allowed": [
+    "cash_rule",
+    "experiment"
+   ],
+   "note": ""
+  },
+  {
+   "experiment": "E5",
+   "tier": "secondary",
+   "arm": "E5_a_bps_5.0",
+   "reference": "E2_C_1b_cost1_cap1",
+   "kind": "replay",
+   "allowed": [
+    "cost.a_bps",
+    "experiment"
+   ],
+   "note": ""
+  },
+  {
+   "experiment": "E5",
+   "tier": "secondary",
+   "arm": "E5_a_bps_30.0",
+   "reference": "E2_C_1b_cost1_cap1",
+   "kind": "replay",
+   "allowed": [
+    "cost.a_bps",
+    "experiment"
+   ],
+   "note": ""
+  },
+  {
+   "experiment": "E5",
+   "tier": "secondary",
+   "arm": "E5_b_0.5",
+   "reference": "E2_C_1b_cost1_cap1",
+   "kind": "replay",
+   "allowed": [
+    "cost.b",
+    "experiment"
+   ],
+   "note": ""
+  },
+  {
+   "experiment": "E5",
+   "tier": "secondary",
+   "arm": "E5_b_1.0",
+   "reference": "E2_C_1b_cost1_cap1",
+   "kind": "replay",
+   "allowed": [
+    "cost.b",
+    "experiment"
+   ],
+   "note": ""
+  },
+  {
+   "experiment": "E5",
+   "tier": "secondary",
+   "arm": "E5_c_0.0",
+   "reference": "E2_C_1b_cost1_cap1",
+   "kind": "replay",
+   "allowed": [
+    "cost.c",
+    "experiment"
+   ],
+   "note": ""
+  },
+  {
+   "experiment": "E5",
+   "tier": "secondary",
+   "arm": "E5_c_2.0",
+   "reference": "E2_C_1b_cost1_cap1",
+   "kind": "replay",
+   "allowed": [
+    "cost.c",
+    "experiment"
+   ],
+   "note": ""
+  },
+  {
+   "experiment": "E5",
+   "tier": "secondary",
+   "arm": "E5_half_spread_bps_1.0",
+   "reference": "E2_C_1b_cost1_cap1",
+   "kind": "replay",
+   "allowed": [
+    "cost.half_spread_bps",
+    "experiment"
+   ],
+   "note": ""
+  },
+  {
+   "experiment": "E5",
+   "tier": "secondary",
+   "arm": "E5_half_spread_bps_2.0",
+   "reference": "E2_C_1b_cost1_cap1",
+   "kind": "replay",
+   "allowed": [
+    "cost.half_spread_bps",
+    "experiment"
+   ],
+   "note": ""
+  },
+  {
+   "experiment": "E5",
+   "tier": "secondary",
+   "arm": "E5_phi_0.01",
+   "reference": "E2_C_1b_cost1_cap1",
+   "kind": "replay",
+   "allowed": [
+    "experiment",
+    "max_participation"
+   ],
+   "note": ""
+  },
+  {
+   "experiment": "E5",
+   "tier": "secondary",
+   "arm": "E5_phi_0.1",
+   "reference": "E2_C_1b_cost1_cap1",
+   "kind": "replay",
+   "allowed": [
+    "experiment",
+    "max_participation"
+   ],
+   "note": ""
+  }
+ ]
+}
