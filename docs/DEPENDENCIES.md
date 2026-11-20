@@ -5,3 +5,5 @@ Observed primary interpreter: Python 3.11.11. Direct dependencies: NumPy 2.4.1 (
 requirements.txt pins direct scientific/figure versions. pyproject.toml declares core and figure extras. Setuptools (MIT) is a bounded build dependency, not a complete hashed binary lock. Transitive builds vary by platform. V1 optional acquisition/provider packages are outside the validated V2 core environment.
 
 Standard-library unittest is used. Batch resource controls require POSIX. No paid service or telemetry is required. Font licenses remain the user's responsibility; no font files are distributed.
+
+Portable installation was checked offline with setuptools65.5.0 and wheel0.46.3; both build tools are pinned in requirements.txt. License metadata uses the LICENSE file form compatible with that tested backend.
