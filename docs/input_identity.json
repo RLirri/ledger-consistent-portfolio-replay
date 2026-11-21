@@ -1,0 +1,29 @@
+{
+  "code_commit": "8e8096fcac68adc7b2f3f7784035369c5895c4f3",
+  "design_fingerprint": "483217d3dea20b8b6987f7fb00cf2e37cf2801d25697d296091088f5ce902eae",
+  "market_id": "64907efeb84e201d5b468451a7ef482dd76969f41c5925ca60a0b528846da3f4",
+  "data_input_sha256": {
+    "data/processed/GLD_1d_clean.parquet": "ce029ad22b85002523f08e3c5b35695ef382930c09b649aa40b78e0d62124a8e",
+    "data/processed/IEF_1d_clean.parquet": "d694ae5ae1aa25be85900f2db9479b0c54f7cd59cd99ddab5fb7a7ceed0e9786",
+    "data/processed/IWM_1d_clean.parquet": "aa446e6fde43172748485300af5076dcbeae57793c8dbaff5dd51d407b0d0ba5",
+    "data/processed/QQQ_1d_clean.parquet": "13b08caa087468c2e5e3d4102ed401be981c9c5b60845969c1e137150b2833b7",
+    "data/processed/SPY_1d_clean.parquet": "339e280c80eceec4bb6881f3cea00c13455b0c5d64742361e37b2fc661a54d45",
+    "data/processed/TLT_1d_clean.parquet": "d24aca0e829d4930949d2c7e9a0cb6ca525ba92b75101dfebda14b2e873ffb91",
+    "data/processed/XLE_1d_clean.parquet": "eee85df854bbc4b2001521dc1049134fd918cab293809750a3196cfb4a1454c4",
+    "data/processed/XLF_1d_clean.parquet": "1d9017e10516de83c0a4bfbfd16102d5e5f496219ad8ed2ab9e3d7f0c99005d5",
+    "data/processed/XLI_1d_clean.parquet": "d7dd7dffe1c3f07ee4f7c370ceeeef8eac8fd0b7a6e2e3fd8e14f3c02c8ff1cd",
+    "data/processed/XLK_1d_clean.parquet": "4f0bb5072c0085803c1acfef5d244d88672a099af7f970384510a5869fff07b9",
+    "data/processed/XLP_1d_clean.parquet": "1ebefaa753fa3b26063b117ca6b36d30a699d675f040dc2abe80f41e41692ce9",
+    "data/processed/XLU_1d_clean.parquet": "962630e086c2162c754eafbb5d4c703cbb286715b998894276b4a8a85b0027c7",
+    "data/processed/XLV_1d_clean.parquet": "0f7d53d370c61bc1af2800d666d8b851c21dad375dd59dd3e4fc0f05d88c2447",
+    "data/processed/XLY_1d_clean.parquet": "5cfb0d614a5d91612a779767c2b58cd58dc9ece903322dc61c870bdbc65b2bcb"
+  },
+  "environment": {
+    "python": "3.11.11",
+    "pandas": "2.3.3",
+    "numpy": "2.4.1",
+    "platform": "macOS-26.6.2-arm64-arm-64bit",
+    "pyarrow": "23.0.0"
+  },
+  "purpose": "Fingerprints only: no data, run permission, or guarantee that another provider can supply the same snapshot."
+}

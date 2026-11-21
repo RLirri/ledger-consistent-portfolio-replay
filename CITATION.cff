@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "Please cite this software when using its implementation or reproduction interfaces."
+type: software
+title: "Ledger-consistent portfolio replay"
+authors:
+  - family-names: Huang
+    given-names: Ruixin
+version: 2.0.0
+repository-code: "https://github.com/RLirri/ledger-consistent-portfolio-replay"
+url: "https://github.com/RLirri/ledger-consistent-portfolio-replay"
+license: MIT
+abstract: "Research software for matched counterfactual evaluation of execution-cost feedback and liquidity constraints in systematic ETF rebalancing. Related manuscript: Counterfactual Evaluation of Execution Costs and Liquidity Constraints in Systematic Portfolio Rebalancing (unpublished)."

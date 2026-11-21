@@ -4,8 +4,15 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "ledger-consistent-etf-trading"
-version = "0.1.0"
+version = "2.0.0"
+description = "Counterfactual evaluation of portfolio execution costs and liquidity constraints"
 requires-python = ">=3.11"
+license = {file = "LICENSE"}
+authors = [{name = "Ruixin Huang"}]
+dependencies = ["numpy==2.4.1", "pandas==2.3.3", "pyarrow==23.0.0"]
+
+[project.optional-dependencies]
+figures = ["matplotlib==3.10.8", "pillow==12.1.0"]
 
 [tool.setuptools]
 package-dir = {"" = "src"}

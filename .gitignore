@@ -1,32 +1,17 @@
-# macOS
-
-.DS_Store
-
-# IDE
-
-.idea/
-.vscode/
-
-# Python
-
-**pycache**/
+__pycache__/
 *.py[cod]
 *.egg-info/
-
-# Data and generated outputs
-
+.venv/
+.DS_Store
+.env
+.env.*
 data/
 artifacts/
-
-# Jupyter
-
-.ipynb_checkpoints/
-
-# Build
-
 build/
 dist/
-
-# Logs
-
 *.log
+local/
+results/
+figures/generated/
+.ruff_cache/
+.pytest_cache/
